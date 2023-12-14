@@ -1,0 +1,217 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel BSM import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$BSMID_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$MBSMID_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$BANKID_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$PRPID_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$OBLIGEEID_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$PROPNO_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$PROPURUT_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$CNNO_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$REGDATE_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$TTG_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$SDATE_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$EDATE_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$MTUSI_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$SI_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$RATE_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$RATEUNIT_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$MTUPREMI_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+				
+			{"text":{$PREMI_pdfvalue},"hidden":"{$item_hide_import_field17}"},
+				
+				
+			{"text":{$SECDATE_pdfvalue},"hidden":"{$item_hide_import_field18}"},
+				
+				
+			{"text":{$SECUSER_pdfvalue},"hidden":"{$item_hide_import_field19}"},
+				
+				
+			{"text":{$SECROLE_pdfvalue},"hidden":"{$item_hide_import_field20}"},
+				
+				
+			{"text":{$FLOWSTATUS_pdfvalue},"hidden":"{$item_hide_import_field21}"},
+				
+				
+			{"text":{$DISPOSISI_pdfvalue},"hidden":"{$item_hide_import_field22}"},
+				
+				
+			{"text":{$TAHUN_pdfvalue},"hidden":"{$item_hide_import_field23}"},
+				
+				
+			{"text":{$DAYS_pdfvalue},"hidden":"{$item_hide_import_field24}"},
+				
+				
+			{"text":{$SFTURUT_pdfvalue},"hidden":"{$item_hide_import_field25}"},
+				
+				
+			{"text":{$STATUS_pdfvalue},"hidden":"{$item_hide_import_field26}"},
+				
+				
+			{"text":{$APPRUSER_pdfvalue},"hidden":"{$item_hide_import_field27}"},
+				
+				
+			{"text":{$APPRDATE_pdfvalue},"hidden":"{$item_hide_import_field28}"},
+				
+				
+			{"text":{$APPRROLE_pdfvalue},"hidden":"{$item_hide_import_field29}"},
+				
+				
+			{"text":{$NEEDAPPROV_pdfvalue},"hidden":"{$item_hide_import_field30}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

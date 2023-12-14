@@ -1,0 +1,232 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel PLACING import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$PLCID_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$PPLCID_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$MPLCID_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$RPLCID_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$BSMID_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$KODECAB_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$MKTNO_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$MKTURUT_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$PLCNO_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$URUTNO_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$QSNO_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$QSURUT_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$CANO_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$CAURUT_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$SFTNO_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$ENDSNO_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$OBLIGEEID_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+				
+			{"text":{$BANKID_pdfvalue},"hidden":"{$item_hide_import_field17}"},
+				
+				
+			{"text":{$PLCTTG_pdfvalue},"hidden":"{$item_hide_import_field18}"},
+				
+				
+			{"text":{$MKTDATE_pdfvalue},"hidden":"{$item_hide_import_field19}"},
+				
+				
+			{"text":{$PLCDATE_pdfvalue},"hidden":"{$item_hide_import_field20}"},
+				
+				
+			{"text":{$SDATE_pdfvalue},"hidden":"{$item_hide_import_field21}"},
+				
+				
+			{"text":{$EDATE_pdfvalue},"hidden":"{$item_hide_import_field22}"},
+				
+				
+			{"text":{$STATUSCLOSE_pdfvalue},"hidden":"{$item_hide_import_field23}"},
+				
+				
+			{"text":{$POLICYTYPE_pdfvalue},"hidden":"{$item_hide_import_field24}"},
+				
+				
+			{"text":{$DAYSNUM_pdfvalue},"hidden":"{$item_hide_import_field25}"},
+				
+				
+			{"text":{$DAYSBASIS_pdfvalue},"hidden":"{$item_hide_import_field26}"},
+				
+				
+			{"text":{$ISTBA_pdfvalue},"hidden":"{$item_hide_import_field27}"},
+				
+				
+			{"text":{$ISEXCLUSIVE_pdfvalue},"hidden":"{$item_hide_import_field28}"},
+				
+				
+			{"text":{$REFFNO_pdfvalue},"hidden":"{$item_hide_import_field29}"},
+				
+				
+			{"text":{$STATUS_pdfvalue},"hidden":"{$item_hide_import_field30}"},
+				
+				
+			{"text":{$IDBS_pdfvalue},"hidden":"{$item_hide_import_field31}"},
+				
+				
+			{"text":{$KODESHARIA_pdfvalue},"hidden":"{$item_hide_import_field32}"},
+				
+				
+			{"text":{$SECDATE_pdfvalue},"hidden":"{$item_hide_import_field33}"},
+				
+				
+			{"text":{$SECUSER_pdfvalue},"hidden":"{$item_hide_import_field34}"},
+				
+				
+			{"text":{$SECROLE_pdfvalue},"hidden":"{$item_hide_import_field35}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

@@ -1,0 +1,21 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = "";
+}
+
+
+
+<ul class="r-menu nav 
+menu-treelike
+" data-menulevel="1">
+	@(Model.displayVar("active_submenu"))
+</ul>

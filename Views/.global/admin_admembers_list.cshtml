@@ -1,0 +1,301 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = "";
+}
+
+<!doctype html>@(new HtmlString(MVCFunctions.GetBuferContentAndClearBufer()))
+<HTML @(Model.displayVar("html_attrs"))>
+	<head>
+				<META http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<META name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@(Model.displayVar("pagetitle"))</title>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<BASE href="@(Model.displayVar("projectPath"))" />
+		<LINK REL="stylesheet" href="styles/default.css?@(Model.displayVar("wizardBuildKey"))" type="text/css" />
+	@foreach (string _rtlCSS in Model.GetSection("rtlCSS", this)){
+	<LINK REL="stylesheet" href="styles/defaultRTL.css?@(Model.displayVar("wizardBuildKey"))" type="text/css" />
+	}
+	@foreach (string _styleCSSFiles in Model.GetSection("styleCSSFiles", this)){
+	<LINK REL="stylesheet" href="@(Model.displayVar("stylepath"))" type="text/css" />
+	}
+			
+	</head>
+	<BODY class="@(Model.displayVar("stylename")) function-admin_admembers_list">
+	@foreach (string _body in Model.GetSection("body", this)){
+		{Html.RenderSharedView("header");}
+		<style>@MvcHtmlString.Create(@"")@(Model.displayVar("containerCss"))@MvcHtmlString.Create(@"")</style>
+		<div class="r-topbar-page">
+			<div data-menu-width="full" 
+				 
+				class="r-topheader" 
+				data-resize-name="topbar"
+				data-body-align="left"
+			>
+										@(Model.displayVar("locking"))
+			</div>	
+			<div data-body-align="left"  data-body-width="standard" class="r-body" data-resize-top="topbar" >
+				<div class="r-top">
+								@foreach (string _top_block in Model.GetSection("top_block", this)){
+<DIV class="r-form" data-location="top" id="form_top_@(Model.displayVar("pageid"))" data-makeup="topbar" @(Model.displayVar("form_top")) data-pageid="@(Model.displayVar("pageid"))">		
+	</div>		
+}
+					</div>
+				<div class="r-content">
+										<div class="r-data-block" data-body-width="standard" >
+						
+											<div class="r-above">
+					@foreach (string _above_grid_block in Model.GetSection("above-grid_block", this)){
+<DIV class="r-form" data-location="above-grid" id="form_above-grid_@(Model.displayVar("pageid"))" data-makeup="topbar" @(Model.displayVar("form_above-grid")) data-pageid="@(Model.displayVar("pageid"))">		
+	 
+				<div class="row">
+			 
+				<DIV data-cellId="above-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_above-grid_c1")) class="			col-md-12
+	
+">
+		@foreach (string _firstAboveGridCell in Model.GetSection("firstAboveGridCell", this)){
+		 
+		<SPAN data-itemtype="simple_search" data-itemid="simple_search" @(Model.displayVar("item_simple_search")) data-pageid="@(Model.displayVar("pageid"))" class="form-group">
+
+<div  class="input-group">
+@foreach (string _searchform_text in Model.GetSection("searchform_text", this)){
+	<INPUT type="search" class="form-control" @(Model.displayVar("searchfor_attrs")) size="25" />
+}
+	<span class="input-group-btn">
+	@foreach (string _searchform_showall in Model.GetSection("searchform_showall", this)){
+				<BUTTON class="btn btn-default" @(Model.displayVar("showAllCont_attrs")) @(Model.displayVar("showallbutton_attrs")) title="Show all">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	}
+
+	@foreach (string _searchform_search in Model.GetSection("searchform_search", this)){
+	<BUTTON @(Model.displayVar("searchbutton_attrs")) class="btn btn-primary">
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	}
+	</span>
+</div>
+		
+</span>	 
+		<SPAN data-itemtype="admembers_add" data-itemid="admembers_add" @(Model.displayVar("item_admembers_add")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn btn-primary   
+	" @(Model.displayVar("addselectlink_attrs"))>
+							Add selected			</a>
+</span>
+			}	
+	</div>					</div>
+			</div>		
+}
+	</div>
+<div class="r-grid">
+	@foreach (string _grid_tabs in Model.GetSection("grid_tabs", this)){
+  <ul class="nav nav-tabs bsgrid_tabs">
+	@(Model.displayVar("grid_tabs_content"))
+  </ul>
+}
+					@foreach (string _grid_block in Model.GetSection("grid_block", this)){
+foreach (string _message_block in Model.GetSection("message_block", this)){
+<DIV data-grid-message data-pageid="@(Model.displayVar("pageid"))" class="alert @(Model.displayVar("message_class"))" role="alert" @(Model.displayVar("grid_message_attrs"))>@(Model.displayVar("message"))</div>
+}<TABLE class="table table-striped table-hover table-bordered" cellpadding="0" data-location="grid" id="form_grid_@(Model.displayVar("pageid"))" data-makeup="topbar" @(Model.displayVar("form_grid")) data-pageid="@(Model.displayVar("pageid"))">
+															<thead>
+				@foreach (string _grid_header in Model.GetSection("grid_header", this)){	
+			
+								<TR @(Model.displayVar("gridHeader_class"))>
+									
+@foreach (string _cellblock_grid_hcell_addLink in Model.GetSection("cellblock_grid_hcell_addLink", this)){
+	<TH @(Model.displayVar("cell_grid_hcell_addLink")) class=" r-ori-vert" data-cellId="grid_hcell_addLink" data-pageid="@(Model.displayVar("pageid"))">
+
+
+	</th>
+	}
+
+
+									
+@foreach (string _cellblock_grid_hcell_cb in Model.GetSection("cellblock_grid_hcell_cb", this)){
+	<TH @(Model.displayVar("cell_grid_hcell_cb")) class=" r-ori-vert" data-cellId="grid_hcell_cb" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	<SPAN data-itemtype="admembers_header_checkbox" data-itemid="admembers_header_checkbox" @(Model.displayVar("item_admembers_header_checkbox")) data-pageid="@(Model.displayVar("pageid"))">
+		<SPAN class="r-admin-checkbox " @(Model.displayVar("checkboxheader_attrs"))></span>
+	</span>
+
+	</th>
+	}
+
+
+									
+@foreach (string _cellblock_grid_hcell_un in Model.GetSection("cellblock_grid_hcell_un", this)){
+	<TH @(Model.displayVar("cell_grid_hcell_un")) class=" r-ori-vert" data-cellId="grid_hcell_un" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	<SPAN data-itemtype="admembers_username_label" data-itemid="admembers_username_label" @(Model.displayVar("item_admembers_username_label")) data-pageid="@(Model.displayVar("pageid"))"> 
+	Username</span>
+
+	</th>
+	}
+
+
+									
+@foreach (string _cellblock_grid_hcell_dn in Model.GetSection("cellblock_grid_hcell_dn", this)){
+	<TH @(Model.displayVar("cell_grid_hcell_dn")) class=" r-ori-vert" data-cellId="grid_hcell_dn" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	<SPAN data-itemtype="admembers_displayname_label" data-itemid="admembers_displayname_label" @(Model.displayVar("item_admembers_displayname_label")) data-pageid="@(Model.displayVar("pageid"))"> 
+	Display name</span>
+
+	</th>
+	}
+
+
+									
+@foreach (string _cellblock_grid_hcell_category in Model.GetSection("cellblock_grid_hcell_category", this)){
+	<TH @(Model.displayVar("cell_grid_hcell_category")) class=" r-ori-vert" data-cellId="grid_hcell_category" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	<SPAN data-itemtype="admembers_category_label" data-itemid="admembers_category_label" @(Model.displayVar("item_admembers_category_label")) data-pageid="@(Model.displayVar("pageid"))"> 
+	Category</span>
+
+	</th>
+	}
+
+
+									
+@foreach (string _cellblock_grid_hcell_email in Model.GetSection("cellblock_grid_hcell_email", this)){
+	<TH @(Model.displayVar("cell_grid_hcell_email")) class=" r-ori-vert" data-cellId="grid_hcell_email" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	<SPAN data-itemtype="admembers_email_label" data-itemid="admembers_email_label" @(Model.displayVar("item_admembers_email_label")) data-pageid="@(Model.displayVar("pageid"))"> 
+	Email</span>
+
+	</th>
+	}
+
+
+							</tr>
+										
+						}
+				</thead>
+																		<tbody>
+				@foreach (string _grid_row in Model.GetSection("grid_row", this)){
+			
+													<TR @(Model.displayVar("rowattrs"))>
+									
+@foreach (string _cellblock_grid_cell_addLink in Model.GetSection("cellblock_grid_cell_addLink", this)){
+	<TD @(Model.displayVar("cell_grid_cell_addLink")) class=" r-ori-vert" data-cellId="grid_cell_addLink" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	@foreach (string _add_link in Model.GetSection("add_link", this)){
+<SPAN data-itemtype="admembers_addlink" data-itemid="admembers_addlink" @(Model.displayVar("item_admembers_addlink")) data-pageid="@(Model.displayVar("pageid"))" data-small data-button-item>
+	<A type="button" title class="btn-link   
+	 " @(Model.displayVar("addlink_attrs"))>		
+				
+					Add			</a>
+</span>
+}
+
+	</td>
+	}
+
+
+									
+@foreach (string _cellblock_grid_cell_cb in Model.GetSection("cellblock_grid_cell_cb", this)){
+	<TD @(Model.displayVar("cell_grid_cell_cb")) class=" r-ori-vert" data-cellId="grid_cell_cb" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	<SPAN data-itemtype="admembers_checkbox" data-itemid="admembers_checkbox" @(Model.displayVar("item_admembers_checkbox")) data-pageid="@(Model.displayVar("pageid"))">
+	@foreach (string _checkbox in Model.GetSection("checkbox", this)){ 	<SPAN class="r-admin-checkbox " @(Model.displayVar("checkbox_attrs"))></span>
+	} </span>
+
+	</td>
+	}
+
+
+									
+@foreach (string _cellblock_grid_cell_un in Model.GetSection("cellblock_grid_cell_un", this)){
+	<TD @(Model.displayVar("cell_grid_cell_un")) class=" r-ori-vert" data-cellId="grid_cell_un" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	@(Model.displayVar("username"))
+	</td>
+	}
+
+
+									
+@foreach (string _cellblock_grid_cell_dn in Model.GetSection("cellblock_grid_cell_dn", this)){
+	<TD @(Model.displayVar("cell_grid_cell_dn")) class=" r-ori-vert" data-cellId="grid_cell_dn" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	@(Model.displayVar("displayusername"))
+	</td>
+	}
+
+
+									
+@foreach (string _cellblock_grid_cell_category in Model.GetSection("cellblock_grid_cell_category", this)){
+	<TD @(Model.displayVar("cell_grid_cell_category")) class=" r-ori-vert" data-cellId="grid_cell_category" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	@(Model.displayVar("categoryuser"))
+
+	</td>
+	}
+
+
+									
+@foreach (string _cellblock_grid_cell_email in Model.GetSection("cellblock_grid_cell_email", this)){
+	<TD @(Model.displayVar("cell_grid_cell_email")) class=" r-ori-vert" data-cellId="grid_cell_email" data-pageid="@(Model.displayVar("pageid"))">
+
+ 
+	@(Model.displayVar("emailuser"))
+	</td>
+	}
+
+
+							</tr>
+					
+						}
+				</tbody>
+					
+</table>
+}
+	</div>
+<div class="r-below">
+					@foreach (string _below_grid_block in Model.GetSection("below-grid_block", this)){
+<DIV class="r-form" data-location="below-grid" id="form_below-grid_@(Model.displayVar("pageid"))" data-makeup="topbar" @(Model.displayVar("form_below-grid")) data-pageid="@(Model.displayVar("pageid"))">		
+	 
+				<div class="row">
+			 
+				<DIV data-cellId="below-grid_c1" data-pageid="@(Model.displayVar("pageid"))" @(Model.displayVar("cell_below-grid_c1")) class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		@foreach (string _pagination_block in Model.GetSection("pagination_block", this)){
+<SPAN data-itemtype="pagination" data-itemid="pagination" @(Model.displayVar("item_pagination")) data-pageid="@(Model.displayVar("pageid"))">
+@(Model.displayVar("pagination"))
+</span>
+}
+		</div>					</div>
+			</div>		
+}
+	</div>
+
+
+
+
+											
+					</div>
+				</div>
+			</div>
+		</div>
+		{Html.RenderSharedView("footer");}
+	}
+	</body>
+</html>

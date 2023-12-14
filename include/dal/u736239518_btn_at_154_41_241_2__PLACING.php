@@ -1,0 +1,46 @@
+<?php
+$dalTablePLACING = array();
+$dalTablePLACING["PLCID"] = array("type"=>200,"varname"=>"PLCID", "name" => "PLCID", "autoInc" => "0");
+$dalTablePLACING["PPLCID"] = array("type"=>200,"varname"=>"PPLCID", "name" => "PPLCID", "autoInc" => "0");
+$dalTablePLACING["MPLCID"] = array("type"=>200,"varname"=>"MPLCID", "name" => "MPLCID", "autoInc" => "0");
+$dalTablePLACING["RPLCID"] = array("type"=>200,"varname"=>"RPLCID", "name" => "RPLCID", "autoInc" => "0");
+$dalTablePLACING["BSMID"] = array("type"=>200,"varname"=>"BSMID", "name" => "BSMID", "autoInc" => "0");
+$dalTablePLACING["KODECAB"] = array("type"=>200,"varname"=>"KODECAB", "name" => "KODECAB", "autoInc" => "0");
+$dalTablePLACING["MKTNO"] = array("type"=>200,"varname"=>"MKTNO", "name" => "MKTNO", "autoInc" => "0");
+$dalTablePLACING["MKTURUT"] = array("type"=>3,"varname"=>"MKTURUT", "name" => "MKTURUT", "autoInc" => "0");
+$dalTablePLACING["PLCNO"] = array("type"=>200,"varname"=>"PLCNO", "name" => "PLCNO", "autoInc" => "0");
+$dalTablePLACING["URUTNO"] = array("type"=>3,"varname"=>"URUTNO", "name" => "URUTNO", "autoInc" => "0");
+$dalTablePLACING["QSNO"] = array("type"=>200,"varname"=>"QSNO", "name" => "QSNO", "autoInc" => "0");
+$dalTablePLACING["QSURUT"] = array("type"=>3,"varname"=>"QSURUT", "name" => "QSURUT", "autoInc" => "0");
+$dalTablePLACING["CANO"] = array("type"=>200,"varname"=>"CANO", "name" => "CANO", "autoInc" => "0");
+$dalTablePLACING["CAURUT"] = array("type"=>3,"varname"=>"CAURUT", "name" => "CAURUT", "autoInc" => "0");
+$dalTablePLACING["SFTNO"] = array("type"=>3,"varname"=>"SFTNO", "name" => "SFTNO", "autoInc" => "0");
+$dalTablePLACING["ENDSNO"] = array("type"=>3,"varname"=>"ENDSNO", "name" => "ENDSNO", "autoInc" => "0");
+$dalTablePLACING["OBLIGEEID"] = array("type"=>200,"varname"=>"OBLIGEEID", "name" => "OBLIGEEID", "autoInc" => "0");
+$dalTablePLACING["BANKID"] = array("type"=>200,"varname"=>"BANKID", "name" => "BANKID", "autoInc" => "0");
+$dalTablePLACING["PLCTTG"] = array("type"=>200,"varname"=>"PLCTTG", "name" => "PLCTTG", "autoInc" => "0");
+$dalTablePLACING["MKTDATE"] = array("type"=>135,"varname"=>"MKTDATE", "name" => "MKTDATE", "autoInc" => "0");
+$dalTablePLACING["PLCDATE"] = array("type"=>135,"varname"=>"PLCDATE", "name" => "PLCDATE", "autoInc" => "0");
+$dalTablePLACING["SDATE"] = array("type"=>135,"varname"=>"SDATE", "name" => "SDATE", "autoInc" => "0");
+$dalTablePLACING["EDATE"] = array("type"=>135,"varname"=>"EDATE", "name" => "EDATE", "autoInc" => "0");
+$dalTablePLACING["STATUSCLOSE"] = array("type"=>200,"varname"=>"STATUSCLOSE", "name" => "STATUSCLOSE", "autoInc" => "0");
+$dalTablePLACING["POLICYTYPE"] = array("type"=>200,"varname"=>"POLICYTYPE", "name" => "POLICYTYPE", "autoInc" => "0");
+$dalTablePLACING["DAYSNUM"] = array("type"=>3,"varname"=>"DAYSNUM", "name" => "DAYSNUM", "autoInc" => "0");
+$dalTablePLACING["DAYSBASIS"] = array("type"=>3,"varname"=>"DAYSBASIS", "name" => "DAYSBASIS", "autoInc" => "0");
+$dalTablePLACING["ISTBA"] = array("type"=>16,"varname"=>"ISTBA", "name" => "ISTBA", "autoInc" => "0");
+$dalTablePLACING["ISEXCLUSIVE"] = array("type"=>16,"varname"=>"ISEXCLUSIVE", "name" => "ISEXCLUSIVE", "autoInc" => "0");
+$dalTablePLACING["REFFNO"] = array("type"=>200,"varname"=>"REFFNO", "name" => "REFFNO", "autoInc" => "0");
+$dalTablePLACING["STATUS"] = array("type"=>200,"varname"=>"STATUS", "name" => "STATUS", "autoInc" => "0");
+$dalTablePLACING["IDBS"] = array("type"=>200,"varname"=>"IDBS", "name" => "IDBS", "autoInc" => "0");
+$dalTablePLACING["KODESHARIA"] = array("type"=>200,"varname"=>"KODESHARIA", "name" => "KODESHARIA", "autoInc" => "0");
+$dalTablePLACING["SECDATE"] = array("type"=>135,"varname"=>"SECDATE", "name" => "SECDATE", "autoInc" => "0");
+$dalTablePLACING["SECUSER"] = array("type"=>200,"varname"=>"SECUSER", "name" => "SECUSER", "autoInc" => "0");
+$dalTablePLACING["SECROLE"] = array("type"=>200,"varname"=>"SECROLE", "name" => "SECROLE", "autoInc" => "0");
+$dalTablePLACING["PLCID"]["key"]=true;
+$dalTablePLACING["MPLCID"]["key"]=true;
+$dalTablePLACING["RPLCID"]["key"]=true;
+$dalTablePLACING["OBLIGEEID"]["key"]=true;
+$dalTablePLACING["BANKID"]["key"]=true;
+
+$dal_info["u736239518_btn_at_154_41_241_2__PLACING"] = &$dalTablePLACING;
+?>

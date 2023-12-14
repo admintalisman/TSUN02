@@ -1,0 +1,21 @@
+[data-cellid="footer_c1"][data-page=".global_login1"][data-cellid="footer_c1"][data-page=".global_login1"][data-cellid="footer_c1"][data-page=".global_login1"] {
+  width: 33.33333333%;
+}
+[data-cellid="footer_c2"][data-page=".global_login1"][data-cellid="footer_c2"][data-page=".global_login1"][data-cellid="footer_c2"][data-page=".global_login1"] {
+  width: 66.66666667%;
+}
+[data-page=".global_login1"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+
+/* Put  your custom CSS code here */
+
+.panel-primary {
+    border-color: #e3e6e9;
+}
+.panel-primary > .panel-heading {
+    color: #000;
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}

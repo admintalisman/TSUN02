@@ -1,0 +1,6 @@
+Import into BSM
+13/12/2023 04:50:22
+
+10000 out of 10000 records processed successfully.
+10000 records added.
+0 records updated.

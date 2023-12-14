@@ -1,0 +1,6 @@
+Import into PLACING
+13/12/2023 04:35:41
+
+14266 out of 14266 records processed successfully.
+14266 records added.
+0 records updated.

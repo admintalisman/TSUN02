@@ -1,0 +1,53 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = "";
+}
+
+<ul class="r-menu nav navbar-nav">
+	@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+	<LI class="@{foreach (string _item1_current in Model.GetSection("item1_current", this)){@MvcHtmlString.Create(@" active")}}">
+		<A @(Model.displayVar("item1_menulink_attrs")) class="curlink" data-menu-top data-menu-link>
+			<span class="r-menu-expanded r-menu-link">
+				<span class="r-menu-title">			
+				@(Model.displayVar("item1_icon")) @(Model.displayVar("item1_title"))
+				</span>
+			</span>
+			<span class="r-menu-collapsed">@(Model.displayVar("item1_collicon"))@(Model.displayVar("item1_firstcap"))</span>
+		</a>
+	</li>
+	}
+	@foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+	<LI class="@{foreach (string _item2_current in Model.GetSection("item2_current", this)){@MvcHtmlString.Create(@" active")}}">
+		<A @(Model.displayVar("item2_menulink_attrs")) class="curlink" data-menu-top data-menu-link>
+			<span class="r-menu-expanded r-menu-link">
+				<span class="r-menu-title">			
+				@(Model.displayVar("item2_icon")) @(Model.displayVar("item2_title"))
+				</span>
+			</span>
+			<span class="r-menu-collapsed">@(Model.displayVar("item2_collicon"))@(Model.displayVar("item2_firstcap"))</span>
+		</a>
+	</li>
+	}
+	@foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+	<LI class="@{foreach (string _item3_current in Model.GetSection("item3_current", this)){@MvcHtmlString.Create(@" active")}}">
+		<A @(Model.displayVar("item3_menulink_attrs")) class="curlink" data-menu-top data-menu-link>
+			<span class="r-menu-expanded r-menu-link">
+				<span class="r-menu-title">			
+				@(Model.displayVar("item3_icon")) @(Model.displayVar("item3_title"))
+				</span>
+			</span>
+			<span class="r-menu-collapsed">@(Model.displayVar("item3_collicon"))@(Model.displayVar("item3_firstcap"))</span>
+		</a>
+	</li>
+	}
+</ul>
+

@@ -1,0 +1,234 @@
+﻿@using runnerDotNet;
+@{
+ XTempl Model = this.Model;
+ if(ViewBag != null && ViewBag.xt != null)
+ {
+  Model = ViewBag.xt;
+  if(Model != null)
+  {
+   Model.currentViewContext = ViewContext;
+  }
+ }
+ string webRootPath = "";
+}
+
+
+
+<ul class="r-menu nav 
+menu-treelike
+" data-menulevel="1">
+	@(Model.displayVar("active_submenu"))
+	
+	
+	@foreach (string _item1_menulink in Model.GetSection("item1_menulink", this)){
+	<LI class=" @(Model.displayVar("item1_current"))">
+		
+<A @(Model.displayVar("item1_menulink_attrs")) title="@(Model.displayVar("item1_tooltip"))" data-menu-top data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+			r-menu-expanded
+	"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item1_icon")) @(Model.displayVar("item1_title"))
+		</span>
+			</span>
+		<span class="r-menu-collapsed">@(Model.displayVar("item1_collicon"))@(Model.displayVar("item1_firstcap"))</span>
+</a>
+
+	</li>
+	}
+	
+	
+	@foreach (string _item2_menulink in Model.GetSection("item2_menulink", this)){
+	<LI class=" @(Model.displayVar("item2_current"))">
+		
+<A @(Model.displayVar("item2_menulink_attrs")) title="@(Model.displayVar("item2_tooltip"))" data-menu-top data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+			r-menu-expanded
+	"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item2_icon")) @(Model.displayVar("item2_title"))
+		</span>
+				@foreach (string _item2_expand_icon in Model.GetSection("item2_expand_icon", this)){
+		<span class="r-menu-expand-icon 
+							fa fa-angle-left
+		"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+	</span>
+		<span class="r-menu-collapsed">@(Model.displayVar("item2_collicon"))@(Model.displayVar("item2_firstcap"))</span>
+</a>
+
+		
+		
+				<UL class="
+					nav collapse 
+			@(Model.displayVar("submenu2_class"))" id="submenu2" data-menulevel=2>
+			@foreach (string _item3_menulink in Model.GetSection("item3_menulink", this)){
+			<LI class=" @(Model.displayVar("item3_current"))">
+				
+<A @(Model.displayVar("item3_menulink_attrs")) title="@(Model.displayVar("item3_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item3_icon")) @(Model.displayVar("item3_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				
+		
+					@foreach (string _item4_menulink in Model.GetSection("item4_menulink", this)){
+			<LI class=" @(Model.displayVar("item4_current"))">
+				
+<A @(Model.displayVar("item4_menulink_attrs")) title="@(Model.displayVar("item4_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item4_icon")) @(Model.displayVar("item4_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				
+		
+					@foreach (string _item5_menulink in Model.GetSection("item5_menulink", this)){
+			<LI class=" @(Model.displayVar("item5_current"))">
+				
+<A @(Model.displayVar("item5_menulink_attrs")) title="@(Model.displayVar("item5_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item5_icon")) @(Model.displayVar("item5_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				
+		
+					@foreach (string _item6_menulink in Model.GetSection("item6_menulink", this)){
+			<LI class=" @(Model.displayVar("item6_current"))">
+				
+<A @(Model.displayVar("item6_menulink_attrs")) title="@(Model.displayVar("item6_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item6_icon")) @(Model.displayVar("item6_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				
+		
+					@foreach (string _item7_menulink in Model.GetSection("item7_menulink", this)){
+			<LI class=" @(Model.displayVar("item7_current"))">
+				
+<A @(Model.displayVar("item7_menulink_attrs")) title="@(Model.displayVar("item7_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item7_icon")) @(Model.displayVar("item7_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				</ul>
+	</li>
+	}
+	
+	
+	@foreach (string _item8_menulink in Model.GetSection("item8_menulink", this)){
+	<LI class=" @(Model.displayVar("item8_current"))">
+		
+<A @(Model.displayVar("item8_menulink_attrs")) title="@(Model.displayVar("item8_tooltip"))" data-menu-top data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+			r-menu-expanded
+	"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item8_icon")) @(Model.displayVar("item8_title"))
+		</span>
+				@foreach (string _item8_expand_icon in Model.GetSection("item8_expand_icon", this)){
+		<span class="r-menu-expand-icon 
+							fa fa-angle-left
+		"></span>
+		<span class="r-menu-mobile-expand-icon fa fa-angle-left"></span>
+		}
+	</span>
+		<span class="r-menu-collapsed">@(Model.displayVar("item8_collicon"))@(Model.displayVar("item8_firstcap"))</span>
+</a>
+
+		
+		
+				<UL class="
+					nav collapse 
+			@(Model.displayVar("submenu8_class"))" id="submenu8" data-menulevel=2>
+			@foreach (string _item9_menulink in Model.GetSection("item9_menulink", this)){
+			<LI class=" @(Model.displayVar("item9_current"))">
+				
+<A @(Model.displayVar("item9_menulink_attrs")) title="@(Model.displayVar("item9_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item9_icon")) @(Model.displayVar("item9_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				
+		
+					@foreach (string _item10_menulink in Model.GetSection("item10_menulink", this)){
+			<LI class=" @(Model.displayVar("item10_current"))">
+				
+<A @(Model.displayVar("item10_menulink_attrs")) title="@(Model.displayVar("item10_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item10_icon")) @(Model.displayVar("item10_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				
+		
+					@foreach (string _item11_menulink in Model.GetSection("item11_menulink", this)){
+			<LI class=" @(Model.displayVar("item11_current"))">
+				
+<A @(Model.displayVar("item11_menulink_attrs")) title="@(Model.displayVar("item11_tooltip"))" data-menu-v data-menu-inline data-menu-link>
+	<span class="
+	r-menu-link
+		"> 
+		<span class="r-menu-title">
+		@(Model.displayVar("item11_icon")) @(Model.displayVar("item11_title"))
+		</span>
+			</span>
+	</a>
+
+			</li>
+			}
+				</ul>
+	</li>
+	}
+</ul>

@@ -1,0 +1,241 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel dbo_m_employee import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$m_employee_id_pdfvalue},"hidden":"{$item_hide_import_field}"},
+				
+				
+			{"text":{$NAMA_pdfvalue},"hidden":"{$item_hide_import_field4}"},
+				
+				
+			{"text":{$EMAIL_pdfvalue},"hidden":"{$item_hide_import_field5}"},
+				
+				
+			{"text":{$POSITION_pdfvalue},"hidden":"{$item_hide_import_field6}"},
+				
+				
+			{"text":{$NOREKBCA_pdfvalue},"hidden":"{$item_hide_import_field7}"},
+				
+				
+			{"text":{$SECDATE_pdfvalue},"hidden":"{$item_hide_import_field8}"},
+				
+				
+			{"text":{$SECUSER_pdfvalue},"hidden":"{$item_hide_import_field9}"},
+				
+				
+			{"text":{$GENDER_pdfvalue},"hidden":"{$item_hide_import_field10}"},
+				
+				
+			{"text":{$AGAMA_pdfvalue},"hidden":"{$item_hide_import_field11}"},
+				
+				
+			{"text":{$BIRTHPLACE_pdfvalue},"hidden":"{$item_hide_import_field12}"},
+				
+				
+			{"text":{$BIRTHDAY_pdfvalue},"hidden":"{$item_hide_import_field13}"},
+				
+				
+			{"text":{$NOKTP_pdfvalue},"hidden":"{$item_hide_import_field14}"},
+				
+				
+			{"text":{$NOKK_pdfvalue},"hidden":"{$item_hide_import_field15}"},
+				
+				
+			{"text":{$NOHP_pdfvalue},"hidden":"{$item_hide_import_field16}"},
+				
+				
+			{"text":{$EMAILPRIBADI_pdfvalue},"hidden":"{$item_hide_import_field17}"},
+				
+				
+			{"text":{$ALAMATKTP_pdfvalue},"hidden":"{$item_hide_import_field18}"},
+				
+				
+			{"text":{$ALAMATDOM_pdfvalue},"hidden":"{$item_hide_import_field19}"},
+				
+				
+			{"text":{$PRID_pdfvalue},"hidden":"{$item_hide_import_field1}"},
+				
+				
+			{"text":{$COMID_pdfvalue},"hidden":"{$item_hide_import_field2}"},
+				
+				
+			{"text":{$NIK_pdfvalue},"hidden":"{$item_hide_import_field3}"},
+				
+				
+			{"text":{$DATEJOIN_pdfvalue},"hidden":"{$item_hide_import_field20}"},
+				
+				
+			{"text":{$DATEANGKAT_pdfvalue},"hidden":"{$item_hide_import_field21}"},
+				
+				
+			{"text":{$NONPWP_pdfvalue},"hidden":"{$item_hide_import_field22}"},
+				
+				
+			{"text":{$NPBJPSKES_pdfvalue},"hidden":"{$item_hide_import_field23}"},
+				
+				
+			{"text":{$NOBPJSTK_pdfvalue},"hidden":"{$item_hide_import_field24}"},
+				
+				
+			{"text":{$NOPASPOR_pdfvalue},"hidden":"{$item_hide_import_field25}"},
+				
+				
+			{"text":{$STATUSTAX_pdfvalue},"hidden":"{$item_hide_import_field26}"},
+				
+				
+			{"text":{$DARURATNAMA_pdfvalue},"hidden":"{$item_hide_import_field27}"},
+				
+				
+			{"text":{$DARURATHUB_pdfvalue},"hidden":"{$item_hide_import_field28}"},
+				
+				
+			{"text":{$DARURATTELP_pdfvalue},"hidden":"{$item_hide_import_field29}"},
+				
+				
+			{"text":{$USERID_pdfvalue},"hidden":"{$item_hide_import_field30}"},
+				
+				
+			{"text":{$LEVEL_pdfvalue},"hidden":"{$item_hide_import_field31}"},
+				
+				
+			{"text":{$UPRID_pdfvalue},"hidden":"{$item_hide_import_field32}"},
+				
+				
+			{"text":{$STATUSKAWIN_pdfvalue},"hidden":"{$item_hide_import_field33}"},
+				
+				
+			{"text":{$JMLANAK_pdfvalue},"hidden":"{$item_hide_import_field34}"},
+				
+				
+			{"text":{$NOASURANSI_pdfvalue},"hidden":"{$item_hide_import_field35}"},
+				
+				
+			{"text":{$NOPKS_pdfvalue},"hidden":"{$item_hide_import_field36}"},
+				
+				
+			{"text":{$DPKS_pdfvalue},"hidden":"{$item_hide_import_field37}"},
+				
+				
+			{"text":{$HANDLER_pdfvalue},"hidden":"{$item_hide_import_field38}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  
